@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'proxima-nova', sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+.container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.header {
+    margin: 1rem;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    padding: 0;
+    /* gap: 2rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+
+
+}
+
+.player-1-text {
+    text-align: center;
+}
+.player-2-text {
+    text-align: center;
+}
+
+
+.roll-die {
+    padding-left:90%;
+}
+
+
+.dice-1 {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+}
+.dice-2 {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.game-box {
+    min-width: 18.6rem;
+    display: flex;
+    width: 30rem;
+    height: 25rem;
+    /* border: 1.5px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#result {
+    min-width: 1.5rem;
+    /* height: fit-content; */
+}
+
+.player-1-box {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    gap: 3rem;
+    background-color: rgba(201, 224, 240, 0.587);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.player-1-die {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.die-box1, .die-box2 {
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    /* box-sizing: border-box; */
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.score1 p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.player-2-box {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    gap: 3rem;
+
+    background-color: rgba(225, 238, 247, 0.542);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.player-2-die {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.score2 p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* bgcolor transition */
+.player-1-box, .player-2-box {
+    transition: background-color 0.7s ease;
+}
+
+
+.roll-die-btn {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.roll-die-btn button{
+    padding: 0.2rem 0.3rem;
+}
+
+
+.dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+button {
+    border: none;
+    border-radius: 5px; 
+    font-size: medium;
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #cec4fc;
+    cursor: pointer; 
+    transition: all 0.2s linear 0s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.start-end-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.two {
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+.three {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+}
+.three .threefirstline {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.three .threemiddleline {
+    width: 100%  ;
+    display: flex;
+    justify-content: center;
+}
+.three .threelastline {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.four {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.four div{
+    display: flex;
+    justify-content: space-between;
+}
+.five {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.35rem;
+}
+.five div {
+    display: flex;
+    justify-content: space-between;
+}
+.five .center {
+    display: flex;
+    justify-content: center;
+}
+.six {
+    width: 100%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.six div {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 490px) {
+    .main-container {
+        width: 100%;
+    }
+    .game-box {
+        width: 100%;
+    }
+}
